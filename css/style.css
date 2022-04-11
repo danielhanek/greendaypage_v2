@@ -1,0 +1,308 @@
+* {
+    line-height: 1.3;
+}
+
+header {
+    height: 100px;
+    background-color: grey;
+}
+
+
+
+h1 {
+    padding:10px 10px 10px 25px;
+    font-size: 40px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-shadow:2px 2px red;
+
+
+}
+
+nav {
+    height:50px;
+    padding:10px;
+    font-size: 18px;
+    
+}
+
+
+nav a {
+    text-decoration:none;
+    background-color: black;
+    color: white;
+    border-radius:5%;
+    font-weight:bold;
+    padding: 0 10px 0 10px;
+    
+    
+}
+
+
+
+nav li{
+    display:inline;
+    margin:5px;
+    text-transform:uppercase;
+    text-align:center;
+    
+    
+}
+
+
+.active {
+    background-color:black;
+    color: red;
+    text-decoration:underline;
+}
+
+
+body {
+    font-family: 'Anton', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight:bold;
+    padding-bottom:10px;
+
+}
+
+p {
+    padding-bottom:15px;
+    
+}
+
+img {
+    width:200px;
+    border: 3px outset red;
+    border-radius: 10%; 
+    margin:10px;
+    
+}
+
+#bandimg:hover{
+    filter: drop-shadow(16px 16px 20px red);
+
+}
+
+.pastmembers img:hover{
+    filter: drop-shadow(16px 16px 20px black);
+}
+
+nav a:hover{
+    color:red;
+    
+}
+
+
+
+ul{
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.membersphotos{
+    padding: 20px 0 20px 0
+}
+
+.skip {
+    text-decoration:none;
+    color: black;
+    text-transform:uppercase;
+    background:gainsboro;
+}
+
+footer {
+    padding-top:20px;
+    height:40px;
+    background-color:black;
+    color: red;
+    
+}
+
+
+
+#form{
+    font-size:26px;
+}
+
+.background {
+    color: green;
+}
+
+.bgimage{
+
+    background-image: url("../imgs/background-image.jpg");
+    background-color: #EAF6F7;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgimage p {
+    max-width: 900px;
+    font-size: 20px;
+    
+}
+
+#bandimg{
+    animation: myanimation 5s;
+    width: 250px;
+}
+
+#skip a{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip a:focus {
+    height: auto;
+    position: static;
+    width: auto;
+}
+
+.contactform{
+    width:500px;
+}
+
+.weight {
+    padding:0;
+    width:300px;
+}
+
+.bgpic {
+    background-image: url("../imgs/background.jpg");
+    background-color: #EAF6F7;
+    background-position: center;
+    background-size: cover;
+}
+
+
+@keyframes myanimation {
+    from {width:25px;
+    opacity:0; filter:blur(10px);}
+    to {width: 250px;
+    opacity:1; filter:blur(0px);}
+
+
+}
+
+@media screen and (prefers-reduced-motion: reduce),(update: slow)
+    {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+  }
+
+.flexalbum {
+display:flex;
+flex-wrap:wrap;
+align-items: flex-start;
+flex-direction: row;
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 1rem; 
+  }
+
+.bestmomentspic1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2; 
+}
+
+.bestmomentspic2 {
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 3; 
+}
+
+.bestmomentspic3 {
+    grid-row: 1 / span 2;
+    grid-column: 6 / 7; 
+}
+
+.bestmomentspic4 {
+    grid-row: 1 / span 2;
+    grid-column: 7 / -1; 
+}
+
+.bestmomentspic5 {
+    grid-row: 3 / span 3;
+    grid-column: 1 / 3; 
+}
+
+.bestmomentspic6 {
+    grid-row: 4 / span 2;
+    grid-column: 3 / 5; 
+}
+
+.bestmomentspic7 {
+    grid-row: 4 / 6;
+    grid-column: 5 / 6; 
+}
+
+.bestmomentspic8 {
+    grid-row: 3 / 6;
+    grid-column: 6 / 8; 
+}
+
+.bestmomentspic9 {
+    grid-row: 3 / 6;
+    grid-column: 8 / -1; 
+}
+
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+
+@media screen and (max-width: 700px) {
+
+body {
+    height:100vh;
+}
+
+header {
+    height: 200px;
+    background-color: grey;
+}
+
+
+
+nav li{
+    display:inline-block;
+    margin:5px;
+    text-transform:uppercase;
+    text-align:center;
+    
+    
+}
+
+.bgimage{
+
+    background-image: url("../imgs/background.jpg");
+    background-color: #EAF6F7;
+    
+}
+
+
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href= "css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de5711e331.js" crossorigin="anonymous"></script>
+    <title>Members</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MKZER68S9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5MKZER68S9');
+</script>
+
+    <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+
+        function play2(){
+             var audio = document.getElementById("audio2");
+             audio.play();
+                       }
+
+        function play3(){
+             var audio = document.getElementById("audio3");
+             audio.play();
+                       }
+         </script>
+</head>
+
+<body>
+    <div id="skip">
+        <a href="#maincontent">Skip to main content</a>
+       </div>
+
+    <header>
+    
+    <h1><i class="fa-solid fa-guitar"></i>  Green Day Members</h1>
+    
+    <nav id = "navigation">
+    
+    <ul>
+        <li><a href="index.html">Welcome page</a></li>
+        <li><a class ="active" href="members.html">Members</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="bestmoments.html">Best moments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://greenday.com/">Official page</a></li>
+    
+    
+    
+    </ul>
+    
+    </nav>
+    
+    </header>
+    
+    
+    <main id ="maincontent" class ="bgpic">
+    <h2>Members of Green Day</h2>
+    <p>There are three main members of Green Day at the time. The band is formed by:</p>
+
+        <ul>
+            <li>Billie Joe Armstrong - guitar, vocal</li>
+            <li>Mike Dirnt - guitar</li>
+            <li>Tré Cool - drums</li>
+
+        </ul>
+
+   <div class = "membersphotos">
+
+   
+    <img src="imgs/billie.jpg" alt = "billie joe armstrong photo" value="PLAY"  onclick="play()">
+    <audio id="audio" src="recordings/billiehello.mp3"></audio>
+    <img src="imgs/mike.jpg" alt = "mike dirnt photo" value="PLAY"  onclick="play2()">
+    <audio id="audio2" src="recordings/mikehello.mp3"></audio>
+    <img src="imgs/tre.png" alt = "tre cool photo" value="PLAY"  onclick="play3()">
+    <audio id="audio3" src="recordings/trehello.mp3"></audio>
+ 
+    </div>
+
+    <p>These are probably the faces, which are familiar for all of us. However,
+        only some people know, that there were some other members of the group back then.</p>
+    <p>One of them is Jason White, who used to be a Green Day member between years 2012 and 2016.
+    Jason also supports the band even in these days. </p>
+    
+
+    <p>Past members:</p>
+    <ul>
+        <li>Jason White - guitar</li>
+        <li>Raj Punjabi - drums</li>
+        <li>John Kiffmeyer - drums</li>
+    </ul>
+
+    <div class = "pastmembers">
+        <img src ="imgs/jason.jpg" alt="jasonwhite">
+        <img src = "imgs/raj.jpg" alt="rajpunjabi">
+        <img src= "imgs/john.jpg" alt="johnkiffmeyer">
+    
+    </div>
+    </main>
+    
+    
+    <footer>
+    Daniel Hanek &copy;2022 (I DON'T OWN ANY OF THESE IMAGES)
+    </footer>
+    
+    
+</body>
+    
+</html>

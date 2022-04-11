@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href= "css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de5711e331.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+  <style>
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+  
+  }
+  
+  #checkbox{
+      display:flex;
+      justify-content:center;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+  
+  input[type=submit]:hover{
+      background-color: red;
+  }
+
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MKZER68S9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5MKZER68S9');
+</script>
+</head>
+
+<div id="skip">
+  <a href="#maincontent">Skip to main content</a>
+ </div>
+
+<body>
+  
+<header>
+
+  <h1><i class="fa-solid fa-address-card"></i>  Contact</h1>
+  <nav>
+    
+    <ul>
+        <li><a href="index.html">Welcome page</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="bestmoments.html">Best moments</a></li>
+        <li><a class = "active" href="contact.html">Contact</a></li>
+        <li><a href="https://greenday.com/">Official page</a></li>
+    
+    
+    
+    </ul>
+    
+    </nav>
+</header>
+
+<main id ="maincontent" class ="bgpic">
+  <form
+  action="https://formspree.io/f/xayvboea"
+  method="POST"
+>
+  <fieldset class="contactform">
+    <legend><h2>Do you like the page? Let me know!</h2></legend>
+    <label for = "name_id">Your Name</label><input type="text" name = "full_name" placeholder="Enter your name" id="name_id" required>
+
+
+
+    <label for = "age_id">Your Age </label><input type="number" name = "age" placeholder="What is your age?" id="age_id">
+
+
+    <label for ="like">How much do you like Green Day?</label><input type="range" name ="like" class="weight"  min="1" max="10" step="1" value="5" id="like"/><br>
+
+
+    <label for ="answer_id">What is on your mind?</label><input type ="text" name = "answer" id="answer_id" required>
+
+
+
+    <label for = "submit">Press to send.</label><input type="submit" name = "submitbutton" value = "You're done!">
+  </fieldset>
+ </form>
+
+</main>
+</body>
+
+<footer>
+  <p>Daniel Hanek &copy;2022 (I DON'T OWN ANY OF THESE IMAGES)</p>
+  </footer>
+
+</html>
