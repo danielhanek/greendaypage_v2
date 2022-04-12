@@ -79,13 +79,27 @@ input {
     </nav>
 </header>
 
-<main id ="maincontent" class ="bgpic">
+<main id ="maincontent" class ="bgpic writeme">
+
+  <div class="flip-card">
+    <div class="flip-card-inner" >
+      <div class="flip-card-front">
+        <img src="imgs/author.jpg" alt="authorsphoto" tabindex="0">
+      </div>
+      <div class="flip-card-back">
+        <p>Author of this amazing page<br>
+        Daniel Hanek</p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "form">
   <form
   action="https://formspree.io/f/xayvboea"
   method="POST"
 >
   <fieldset class="contactform">
-    <legend><h2>Do you like the page? Let me know!</h2></legend>
+    <legend><h2>Do you like the page? Let&nbsp;me&nbsp;know!</h2></legend>
     <label for = "name_id">Your Name</label><input type="text" name = "full_name" placeholder="Enter your name" id="name_id" required>
 
 
@@ -93,16 +107,18 @@ input {
     <label for = "age_id">Your Age </label><input type="number" name = "age" placeholder="What is your age?" id="age_id">
 
 
-    <label for ="like">How much do you like Green Day?</label><input type="range" name ="like" class="weight"  min="1" max="10" step="1" value="5" id="like"/><br>
+    <label for ="like">How much do you like Green Day?</label><br><input type="range" name ="like" class="weight"  min="1" max="10" step="1" value="5" id="like"/><br>
 
 
     <label for ="answer_id">What is on your mind?</label><input type ="text" name = "answer" id="answer_id" required>
 
 
 
-    <label for = "submit">Press to send.</label><input type="submit" name = "submitbutton" value = "You're done!">
+    <label for = "submit">Press to send.</label><input type="submit" name = "submitbutton" value = "You're done!" id="submit">
   </fieldset>
  </form>
+</div>
+
 
 </main>
 </body>
